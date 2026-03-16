@@ -94,6 +94,7 @@ form {
     background: #f0f8f8;
     padding: 15px;
     border-radius: 10px;
+	box-sizing: border-box;
 }
 
 form input, form textarea, form button {
@@ -103,6 +104,7 @@ form input, form textarea, form button {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+	box-sizing: border-box;
 }
 
 form button {
@@ -275,7 +277,11 @@ function showSection(sectionId) {
     <input type="email" id="email" name="email" required><br><br>
 
     <label for="date">Preferred Hiking Date:</label><br>
-    <input type="date" id="date" name="date"><br><br>
+    <input type="date" id="date">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  flatpickr("#date", {}); // polyfill for browsers without native date input
+</script>
 
     <label for="message">Message:</label><br>
     <textarea id="message" name="message" rows="4" placeholder="Tell me about yourself!"></textarea><br><br>
