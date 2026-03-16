@@ -43,21 +43,6 @@ main{
     margin:auto;
 }
 
-/* Hide all sections by default */
-section{
-    display:none;
-}
-
-/* Show the section that is clicked */
-section:target{
-    display:block;
-}
-
-/* If nothing is targeted, show the What section */
-body:not(:has(:target)) #what{
-    display:block;
-}
-
 figure{
     margin:20px 0;
 }
@@ -101,6 +86,19 @@ footer a{
 </style>
 </head>
 
+<script>
+function showSection(sectionId) {
+
+    const sections = document.querySelectorAll("main section");
+
+    sections.forEach(function(section) {
+        section.style.display = "none";
+    });
+
+    document.getElementById(sectionId).style.display = "block";
+}
+</script>
+
 <body>
 
 <header>
@@ -109,22 +107,12 @@ footer a{
 
 <nav>
 
-<a href="#what">What</a>
-<span class="divider">|</span>
-
-<a href="#who">Who</a>
-<span class="divider">|</span>
-
-<a href="#when">When</a>
-<span class="divider">|</span>
-
-<a href="#where">Where</a>
-<span class="divider">|</span>
-
-<a href="#how">How</a>
-<span class="divider">|</span>
-
-<a href="#why">Why</a>
+<a href="#" onclick="showSection('what')">What</a> |
+<a href="#" onclick="showSection('who')">Who</a> |
+<a href="#" onclick="showSection('when')">When</a> |
+<a href="#" onclick="showSection('where')">Where</a> |
+<a href="#" onclick="showSection('how')">How</a> |
+<a href="#" onclick="showSection('why')">Why</a>
 
 </nav>
 
@@ -154,7 +142,7 @@ footer a{
 
 </section>
 
-<section id="who">
+<section id="who" style="display:none;">
 
 <h2>Who Hikes?</h2>
 
@@ -176,7 +164,7 @@ footer a{
 
 </section>
 
-<section id="when">
+<section id="when" style="display:none;">
 
 <h2>Best Times to Hike</h2>
 
@@ -222,7 +210,7 @@ footer a{
 
 </section>
 
-<section id="where">
+<section id="where" style="display:none;">
 
 <h2>Best Places to Hike</h2>
 
@@ -244,7 +232,7 @@ footer a{
 
 </section>
 
-<section id="how">
+<section id="how" style="display:none;">
 
 <h2>How to Start Hiking</h2>
 
@@ -272,7 +260,7 @@ footer a{
 
 </section>
 
-<section id="why">
+<section id="why" style="display:none;">
 
 <h2>Why I Love Hiking</h2>
 
