@@ -43,28 +43,19 @@ main{
     margin:auto;
 }
 
-/* Hide all sections */
-
+/* Hide all sections by default */
 section{
     display:none;
 }
 
-/* Default page (What) */
-
-#what{
-    display:block;
-}
-
-/* Show whichever section is clicked */
-
+/* Show the section that is clicked */
 section:target{
     display:block;
 }
 
-/* Hide What when another section is targeted */
-
-section:target ~ #what{
-    display:none;
+/* If nothing is targeted, show the What section */
+body:not(:has(:target)) #what{
+    display:block;
 }
 
 figure{
@@ -140,6 +131,28 @@ footer a{
 </header>
 
 <main>
+
+<section id="what">
+
+<h2>What is Hiking?</h2>
+
+<p>Hiking is the activity of walking through natural environments such as forests, mountains, and national parks.</p>
+
+<p>Many hikers enjoy the peace and quiet of trails, scenic views, and discovering wildlife.</p>
+
+<p>Hiking can be a short nature walk or a long journey across mountains and wilderness areas.</p>
+
+<figure>
+
+<img src="images/hiking1.jpg" alt="Mountain hiking trail">
+
+<figcaption>Mountain Hiking Trail</figcaption>
+
+</figure>
+
+<p class="ai-note">AI prompt: photorealistic mountain hiking trail through a forest with sunlight and scenic mountain views.</p>
+
+</section>
 
 <section id="who">
 
@@ -278,28 +291,6 @@ footer a{
 </figure>
 
 <p class="ai-note">AI prompt: photorealistic sunset view from a mountain hiking trail overlooking a valley.</p>
-
-</section>
-
-<section id="what">
-
-<h2>What is Hiking?</h2>
-
-<p>Hiking is the activity of walking through natural environments such as forests, mountains, and national parks.</p>
-
-<p>Many hikers enjoy the peace and quiet of trails, scenic views, and discovering wildlife.</p>
-
-<p>Hiking can be a short nature walk or a long journey across mountains and wilderness areas.</p>
-
-<figure>
-
-<img src="images/hiking1.jpg" alt="Mountain hiking trail">
-
-<figcaption>Mountain Hiking Trail</figcaption>
-
-</figure>
-
-<p class="ai-note">AI prompt: photorealistic mountain hiking trail through a forest with sunlight and scenic mountain views.</p>
 
 </section>
 
