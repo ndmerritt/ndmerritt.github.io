@@ -88,6 +88,34 @@ footer a{
     color:white;
 }
 
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    background: #f0f8f8;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #2c6e49;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #1f5035;
+}
+
 </style>
 
 <script>
@@ -150,11 +178,14 @@ function showSection(sectionId) {
 
 <h2>Who Hikes?</h2>
 
-<p>Hiking is enjoyed by people of many different ages and backgrounds.</p>
+<p>Hiking is enjoyed by people of all ages and backgrounds. Here are some groups who love hiking:</p>
 
-<p>Families often hike together because it is a healthy outdoor activity.</p>
-
-<p>Many communities also have hiking clubs that organize group hikes.</p>
+<ul>
+    <li>Families looking for healthy outdoor activities</li>
+    <li>Friends exploring trails together</li>
+    <li>Outdoor clubs and community groups</li>
+    <li>Solo hikers seeking peace and nature</li>
+</ul>
 
 <figure>
 
@@ -234,17 +265,23 @@ function showSection(sectionId) {
 
 <h2>How to Start Hiking</h2>
 
-<p>Starting hiking is simple and does not require expensive equipment.</p>
+<p>Interested in hiking with me? Fill out the form below to request a hike!</p>
 
-<p>Begin with short trails and gradually increase the difficulty.</p>
+<form action="#" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
 
-<ul>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
-<li>Wear comfortable hiking shoes</li>
-<li>Bring water and snacks</li>
-<li>Check weather conditions</li>
+    <label for="date">Preferred Hiking Date:</label><br>
+    <input type="date" id="date" name="date"><br><br>
 
-</ul>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" placeholder="Tell me about yourself!"></textarea><br><br>
+
+    <button type="submit">Request a Hike</button>
+</form>
 
 <figure>
 
