@@ -277,11 +277,9 @@ function showSection(sectionId) {
     <input type="email" id="email" name="email" required><br><br>
 
     <label for="date">Preferred Hiking Date:</label><br>
-    <input type="date" id="date">
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script>
-  flatpickr("#date", {}); // polyfill for browsers without native date input
-</script>
+	<input type="text" id="date" name="date" 
+       placeholder="YYYY-MM-DD" 
+       pattern="\d{4}-\d{2}-\d{2}"><br><br>
 
     <label for="message">Message:</label><br>
     <textarea id="message" name="message" rows="4" placeholder="Tell me about yourself!"></textarea><br><br>
