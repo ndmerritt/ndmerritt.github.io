@@ -1,39 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+/* New modern font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #e9f5f2, #d7ebe5);
-    color: #2c3e50;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f7ffe5, #eaffc7);
+    color: #2b2b2b;
     line-height: 1.6;
     margin: 0;
 }
 
-/* Header with slight depth */
+/* Fixed top navigation bar */
 header {
-    background: linear-gradient(to right, #2c6e49, #3d8b63);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(to right, #a3e635, #84cc16);
     color: white;
-    padding: 25px;
-    text-align: center;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
 }
 
-h1 {
-    margin: 0;
-    letter-spacing: 1px;
+/* Logo */
+.logo {
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
-h2 {
-    color: #1f5035;
-    border-left: 5px solid #2c6e49; /* unique accent */
-    padding-left: 10px;
-}
-
-/* Navigation with animated underline */
+/* Nav links */
 nav a {
-    color: #f1f8ff;
+    color: white;
     text-decoration: none;
-    margin: 0 12px;
-    font-weight: bold;
+    margin-left: 20px;
+    font-weight: 500;
     position: relative;
 }
 
@@ -42,9 +44,9 @@ nav a::after {
     position: absolute;
     width: 0%;
     height: 2px;
-    bottom: -3px;
+    bottom: -4px;
     left: 0;
-    background-color: #ffffff;
+    background-color: white;
     transition: width 0.3s ease;
 }
 
@@ -52,18 +54,14 @@ nav a:hover::after {
     width: 100%;
 }
 
-.divider {
-    margin: 0 5px;
-}
-
-/* Main container */
+/* Push content below fixed header */
 main {
-    padding: 20px;
+    padding: 100px 20px 20px; /* top padding prevents overlap */
     max-width: 900px;
     margin: auto;
 }
 
-/* Section "card" effect */
+/* Section cards */
 section {
     background: white;
     padding: 20px;
@@ -78,15 +76,21 @@ section:hover {
     box-shadow: 0 10px 22px rgba(0,0,0,0.12);
 }
 
-/* Images */
-figure {
-    margin: 20px 0;
+/* Headings */
+h1 {
+    margin: 0;
 }
 
+h2 {
+    color: #65a30d;
+    border-left: 5px solid #a3e635;
+    padding-left: 10px;
+}
+
+/* Images */
 figure img {
     width: 100%;
     max-width: 500px;
-    height: auto;
     border-radius: 12px;
     display: block;
     margin: 0 auto;
@@ -94,32 +98,27 @@ figure img {
 }
 
 figure img:hover {
-    transform: scale(1.03); /* subtle zoom */
+    transform: scale(1.03);
 }
 
 figure figcaption {
     font-style: italic;
-    color: #4b4b4b;
     text-align: center;
     margin-top: 8px;
-    font-weight: bold;
+    font-weight: 500;
 }
 
-/* Notes */
-.ai-note {
-    font-style: italic;
-    background: #e6f4f1;
-    padding: 10px;
-    border-left: 4px solid #2c6e49;
-    border-radius: 6px;
-}
-
-/* Table styling */
+/* Table */
 table {
     border-collapse: collapse;
     width: 100%;
-    overflow: hidden;
     border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: #a3e635;
+    color: #1a1a1a;
 }
 
 td, th {
@@ -127,33 +126,14 @@ td, th {
     padding: 10px;
 }
 
-th {
-    background: #2c6e49;
-    color: white;
-}
-
-/* Footer */
-footer {
-    background: linear-gradient(to right, #2c6e49, #3d8b63);
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-}
-
-footer a {
-    color: white;
-}
-
-/* Form styling */
+/* Form */
 form {
     max-width: 400px;
     margin: 20px auto;
-    background: #f0f8f8;
+    background: #f7ffe5;
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    box-sizing: border-box;
 }
 
 form input, 
@@ -161,31 +141,34 @@ form textarea,
 form button {
     width: 100%;
     padding: 10px;
-    margin-top: 5px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
     border-radius: 6px;
-    box-sizing: border-box;
+    border: 1px solid #ccc;
 }
 
-/* Focus effect (nice UX touch) */
 form input:focus, 
 form textarea:focus {
     outline: none;
-    border-color: #2c6e49;
-    box-shadow: 0 0 5px rgba(44,110,73,0.3);
+    border-color: #a3e635;
+    box-shadow: 0 0 5px rgba(163,230,53,0.4);
 }
 
 form button {
-    background: linear-gradient(to right, #2c6e49, #3d8b63);
-    color: white;
+    background: linear-gradient(to right, #a3e635, #84cc16);
     border: none;
+    font-weight: 600;
     cursor: pointer;
-    font-weight: bold;
-    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 form button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(to right, #a3e635, #84cc16);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
