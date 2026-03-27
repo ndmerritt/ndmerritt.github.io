@@ -35,7 +35,6 @@ span[class="status"],
 span[class^="rate"] {
   height: 25px;
   width: 110px;
-  padding: 4px;
   text-align: center;
   border-radius: 6px;
   font-weight: bold;
