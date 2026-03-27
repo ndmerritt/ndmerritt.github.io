@@ -1,44 +1,49 @@
-tr[class="read"] {
-  background-image: linear-gradient(to right, #d4edda, #a8e6a3);
+tr[class="resting"] {
+  background-image: linear-gradient(to right, #d4edda, #7ed957); /* calm green */
 }
 
-tr[class="to-read"] {
-  background-image: linear-gradient(to right, #fff3cd, #ffe08a);
+tr[class="hunting"] {
+  background-image: linear-gradient(to right, #fff3cd, #ffd54f); /* bug hunting yellow */
 }
 
-tr[class="in-progress"] {
-  background-image: linear-gradient(to right, #cce5ff, #99ccff);
+tr[class="exploring"] {
+  background-image: linear-gradient(to right, #cce5ff, #64b5f6); /* adventure blue */
 }
 
 span {
   display: inline-block;
 }
 
-tr[class="to-read"] span[class="status"] {
-  border: 2px solid #856404;
-  background-image: linear-gradient(to right, #fff3cd, #ffeeba);
+
+tr[class="hunting"] span[class="status"] {
+  border: 2px solid #8a6d00;
+  background-image: linear-gradient(to right, #fff3cd, #ffe082);
 }
 
-tr[class="read"] span[class="status"] {
-  border: 2px solid #155724;
-  background-image: linear-gradient(to right, #d4edda, #c3e6cb);
+tr[class="resting"] span[class="status"] {
+  border: 2px solid #1b5e20;
+  background-image: linear-gradient(to right, #c8e6c9, #81c784);
 }
 
-tr[class="in-progress"] span[class="status"] {
-  border: 2px solid #004085;
-  background-image: linear-gradient(to right, #cce5ff, #b8daff);
+tr[class="exploring"] span[class="status"] {
+  border: 2px solid #0d47a1;
+  background-image: linear-gradient(to right, #bbdefb, #64b5f6);
 }
+
 
 span[class="status"],
 span[class^="rate"] {
   height: 25px;
-  width: 90px;
+  width: 110px;
   padding: 4px;
   text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
 }
 
+
 span[class^="rate"] > span {
-  border: 1px solid black;
+  border: 1px solid #333;
   border-radius: 4px;
   margin: 2px;
   height: 15px;
@@ -46,25 +51,33 @@ span[class^="rate"] > span {
   background-color: #eee;
 }
 
+
 span[class~="one"] span:first-child {
-  background-image: linear-gradient(to top, gold, orange);
+  background-image: linear-gradient(to top, limegreen, green);
 }
 
 span[class~="two"] span:nth-child(-n+2) {
-  background-image: linear-gradient(to top, gold, orange);
+  background-image: linear-gradient(to top, limegreen, green);
 }
 
 span[class~="three"] span {
-  background-image: linear-gradient(to top, gold, orange);
+  background-image: linear-gradient(to top, limegreen, green);
 }
+
 
 table {
   border-collapse: collapse;
   width: 100%;
+  background-color: #f1f8e9;
 }
 
 th, td {
-  border: 1px solid black;
+  border: 1px solid #2e7d32;
   padding: 8px;
   text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: #1b5e20;
 }
