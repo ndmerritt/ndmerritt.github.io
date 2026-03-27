@@ -119,4 +119,16 @@ form {
   padding-left: 20px;
   margin: 10px 0;
 }
+
+#logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white; 
+}
 }
