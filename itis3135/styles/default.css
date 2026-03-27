@@ -9,16 +9,21 @@ body {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    background: linear-gradient(to right, #a3e635, #84cc16);
-    color: white;
-    padding: 15px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 15px 25px;
+    background: linear-gradient(to right, #a3e635, #84cc16);
+    color: white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: fixed;
+    top: 0;
     z-index: 1000;
+}
+
+header nav {
+    flex-grow: 1;
+    text-align: right;
 }
 
 .logo {
