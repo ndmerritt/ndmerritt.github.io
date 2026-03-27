@@ -42,7 +42,6 @@ span[class^="rate"] {
 
 
 span[class^="rate"] > span {
-  border: 1px solid #333;
   border-radius: 4px;
   margin: 2px;
   height: 15px;
