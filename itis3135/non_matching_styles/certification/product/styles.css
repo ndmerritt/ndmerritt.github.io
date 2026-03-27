@@ -118,9 +118,14 @@ ul {
     margin: 10px 0;
 }
 
-#care-packages ul {
-  list-style: none;
-  padding-left: 0;
+.price-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#features ul {
+    list-style: none;
+    padding-left: 0;
 }
 
 #logo-container {
