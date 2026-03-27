@@ -112,11 +112,16 @@ form {
     align-items: center;
   }
   
-  ul {
-  list-style-type: disc; 
-  display: list-item; 
+#features ul {
+  list-style-type: disc;
+  display: list-item;
   padding-left: 20px;
-  margin: 10px 0; 
+  margin: 10px 0;
+}
+
+#care-packages ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 #logo-container {
