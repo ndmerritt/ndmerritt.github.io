@@ -2,33 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Survey Form</title>
+	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>Gecko Survey</title>
   </head>
 
   <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-      <p id="description">Thank you for taking the time to help us improve the platform</p>
-      <form id="survey-form">
-        <label id="name-label">Name</label>
-        <input id="name" type="text" placeholder="John Doe" required>
-        <label id="email-label">Email</label>
-        <input id="email" type="email" placeholder="email@gmail.com" required>
-        <label id="number-label">Number</label>
-        <input id="number" type="number" min="3" max="100" placeholder="5">
+    <h1 id="title">Gecko Habitat Survey 🦎</h1>
+    <p id="description">
+      Thanks for helping us improve the ultimate gecko experience!
+    </p>
+
+    <form id="survey-form">
+      
+      <label id="name-label">What is your gecko's name?</label>
+      <input id="name" type="text" placeholder="e.g. Sticky Joe" required>
+
+      <label id="email-label">Owner Email</label>
+      <input id="email" type="email" placeholder="gecko.lover@email.com" required>
+
+      <label id="number-label">How many geckos do you own?</label>
+      <input id="number" type="number" min="1" max="50" placeholder="2">
+
+      <label for="dropdown">Favorite Gecko Species</label>
       <select id="dropdown">
-        <option id="op1">First</option>
-        <option id="op2" selected>Second</option>
-        </select>
+        <option id="op1">Leopard Gecko</option>
+        <option id="op2" selected>Crested Gecko</option>
+        <option id="op3">Tokay Gecko</option>
+      </select>
+
       <fieldset>
-          <legend>Was this your first time at our hotel?</legend>
-          <input id="yes-option" type="radio" name="hotel-stay" value="yes" />
-          <label for="yes-option">Yes</label>
-          <input id="no-option" type="radio" name="hotel-stay" value="no" />
-          <label for="no-option">No</label>
-        </fieldset>
-      <input type="checkbox" value="1st">1</input>
-      <input type="checkbox" value="2nd">2</input>
-      <textarea col="30" row="10"></textarea>
-      <button id="submit">submit</button>
+        <legend>Is this your first time owning a gecko?</legend>
+        <input id="yes-option" type="radio" name="gecko-owner" value="yes" />
+        <label for="yes-option">Yes</label>
+
+        <input id="no-option" type="radio" name="gecko-owner" value="no" />
+        <label for="no-option">No</label>
+      </fieldset>
+
+      <p>What does your gecko love to do?</p>
+      <input type="checkbox" value="climbing"> Climbing walls</input><br>
+      <input type="checkbox" value="hiding"> Hiding in rocks</input><br>
+      <input type="checkbox" value="eating"> Hunting insects</input><br>
+
+      <p>Tell us about your gecko’s personality:</p>
+      <textarea cols="30" rows="5" placeholder="Lazy? Energetic? Escape artist?"></textarea>
+
+      <br><br>
+      <button id="submit">Submit 🦎</button>
+    </form>
   </body>
 </html>
