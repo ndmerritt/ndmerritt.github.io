@@ -16,9 +16,7 @@ body {
   top: 0;
   width: 260px;
   height: 100vh;
-  border-right: 3px solid #2e7d32;
   background: linear-gradient(to bottom, #c8e6c9, #81c784);
-  padding: 20px;
   overflow-y: auto;
 }
 
@@ -81,7 +79,6 @@ ul {
     position: relative;
     width: 100%;
     height: auto;
-    border-right: none;
     border-bottom: 3px solid #2e7d32;
   }
 
