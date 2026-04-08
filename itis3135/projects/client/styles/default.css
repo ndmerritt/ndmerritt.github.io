@@ -85,14 +85,14 @@ nav a {
 /* Tall right */
 .card-6 {
   grid-column: 3/ span 1;
-  grid-row: span 3;
+  grid-row: 5/ span 3;
   background-image: url("../img/cinn_saffron.jpg");
 }
 
 /* Bottom right */
 .card-7 {
   grid-column: 4/ span 1;
-  grid-row: span 3;
+  grid-row: 5/ span 3;
   background-image: url("../img/Bassett_MOE_ad.jpg");
 }
 
