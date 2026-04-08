@@ -87,7 +87,7 @@ nav a {
 /* Tall right */
 .card-6 {
   grid-column: 2/ span 1;
-  grid-row: 6/ span 3;
+  grid-row: 6/ span 4;
   background-image: url("../img/cinn_saffron.jpg");
 }
 
@@ -96,12 +96,13 @@ nav a {
   grid-column: 3/ span 2;
   grid-row: 5/ span 3;
   background-image: url("../img/Bassett_MOE_ad.jpg");
+  background-position: top center;
 }
 
 /* Wide bottom left */
 .card-5 {
   grid-column: 3/ span 2;
-  grid-row: span 3;
+  grid-row: span 2;
   background-image: url("../img/Scoops.jpg");
 }
 
