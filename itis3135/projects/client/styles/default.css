@@ -139,8 +139,8 @@ nav a {
   color: white;
 }
 
-.overlay h1,
-.overlay h2 {
+.overlay-heading,
+.overlay-subtitle {
   margin-bottom: 10px;
 }
 
@@ -208,18 +208,6 @@ nav a {
   transition: transform 0.3s ease;
 }
 
-@media (max-width: 900px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-    grid-template-rows: none;
-  }
-
-  .card {
-    grid-column: auto !important;
-    grid-row: auto !important;
-    height: 250px;
-  }
-}
 
 .project-link {
   display: inline-block;
@@ -244,12 +232,24 @@ hr {
 }
 
 .no-dim-video::before {
-  opacity: 0 !important;
+  opacity: 0;
 }
 
 .no-dim-video:hover::before {
-  opacity: 0 !important;
+  opacity: 0;
 }
 
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .card {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    height: 250px;
+  }
+}
 
 
