@@ -67,7 +67,7 @@ nav a {
 /* Video card */
 .card-8 {
   grid-column: 1/ span 1;
-  grid-row: 3/ span 3;
+  grid-row: 5/ span 3;
 }
 
 /* Small left cards */
