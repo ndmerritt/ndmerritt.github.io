@@ -1,13 +1,14 @@
-const videoCards = document.querySelectorAll('.card-video');
+document.querySelectorAll('.card').forEach(card => {
+  const video = card.querySelector('video');
 
-videoCards.forEach(video => {
-  const card = video.parentElement;
+  if (!video) return; // skip if no video
 
   card.addEventListener('mouseenter', () => {
+    // Unmute and call play() to ensure sound starts
     video.muted = false;
-    video.volume = 0.5; 
-    video.play().catch(err => { 
-      console.log('Cannot play video:', err);
+    video.volume = 0.5;
+    video.play().catch(err => {
+      console.log('Video could not play:', err);
     });
   });
 
