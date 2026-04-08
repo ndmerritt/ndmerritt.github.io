@@ -66,8 +66,8 @@ nav a {
 
 /* Video card */
 .card-8 {
-  grid-column: span 1;
-  grid-row: span 3;
+  grid-column: 2/ span 1;
+  grid-row: 1/ span 3;
 }
 
 /* Small left cards */
@@ -104,7 +104,12 @@ nav a {
   background-image: url("../img/Bassett_MOE_ad.jpg");
 }
 
-
+.card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* <-- shows the entire video without cropping */
+  border-radius: 15px; /* keep same as card */
+}
 
 
 .large {
