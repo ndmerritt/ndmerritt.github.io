@@ -192,6 +192,12 @@ nav a {
   transform: translateY(20px);
   transition: all 0.3s ease;
   text-align: center;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-overlay p {
+  font-family: 'Poppins', sans-serif;
 }
 
 .card:hover::before {
@@ -232,11 +238,11 @@ hr {
 }
 
 .no-dim-video::before {
-  opacity: 0;
+  opacity: 0.3;
 }
 
 .no-dim-video:hover::before {
-  opacity: 0;
+  opacity: 0.3;
 }
 
 @media (max-width: 900px) {
