@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 60px;
+  background: #1a1a1a;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  width: 100px;
+  height: auto;
+}
+
+nav a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 180px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  position: relative;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+/* Large left */
+.card-1 {
+  grid-column: span 2;
+  grid-row: span 3;
+  background-image: url("../img/heads_tails.jpg");
+}
+
+/* Large right */
+.card-2 {
+  grid-column: span 2;
+  grid-row: span 4;
+  background-image: url("../img/Cloudburst.jpg");
+}
+
+/* Video card */
+.card-8 {
+  grid-column: 1/ span 1;
+  grid-row: 4/ span 4;
+}
+
+/* Small left cards */
+.card-3 {
+  grid-column: span 1;
+  grid-row: span 2;
+  background-image: url("../img/AIP.jpg");
+}
+
+.card-4 {
+  grid-column: 1/ span 1;
+  grid-row: span 2;
+  background-image: url("../img/collegeAdmit.jpg");
+}
+
+
+/* Tall right */
+.card-6 {
+  grid-column: 2/ span 1;
+  grid-row: 6/ span 4;
+  background-image: url("../img/cinn_saffron.jpg");
+}
+
+/* Bottom right */
+.card-7 {
+  grid-column: 3/ span 2;
+  grid-row: 5/ span 3;
+  background-image: url("../img/Bassett_MOE_ad.jpg");
+  background-position: top center;
+}
+
+/* Wide bottom left */
+.card-5 {
+  grid-column: 3/ span 2;
+  grid-row: span 2;
+  background-image: url("../img/Scoops.jpg");
+}
+
+.card-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.small {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+}
+
+.overlay-heading,
+.overlay-subtitle {
+  margin-bottom: 10px;
+}
+
+.overlay button {
+  padding: 8px 16px;
+  border: none;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+.card {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  overflow: hidden;
+
+  border-radius: 15px;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: 0.3s;
+
+  border-radius: 15px;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+
+.project-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 30px 0;
+}
+
+.services p {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.no-dim-video::before {
+  opacity: 0;
+}
+
+.no-dim-video:hover::before {
+  opacity: 0;
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .card {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    height: 250px;
+  }
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border: 0;
+}
