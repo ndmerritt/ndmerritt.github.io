@@ -176,7 +176,7 @@ nav a {
   transform: translateY(20px);
   transition: all 0.3s ease;
   text-align: center;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 .card:hover::before {
