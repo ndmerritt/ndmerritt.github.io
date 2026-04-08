@@ -44,7 +44,7 @@ nav a {
   border-radius: 15px;
   overflow: hidden;
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 
@@ -52,41 +52,48 @@ nav a {
 .card-1 {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
+  background-image: url("img/heads_tails.jpg");
 }
 
 /* Large right */
 .card-2 {
   grid-column: 3 / 5;
   grid-row: 1 / 3;
+  background-image: url("img/Cloudburst.jpg");
 }
 
 /* Small left cards */
 .card-3 {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
+  background-image: url("img/AIP.jpg");
 }
 
 .card-4 {
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+  background-image: url("img/collegeAdmit.jpg");
 }
 
 /* Wide bottom left */
 .card-5 {
   grid-column: 1 / 3;
   grid-row: 4 / 5;
+  background-image: url("img/Scoops.jpg");
 }
 
 /* Tall right */
 .card-6 {
   grid-column: 3 / 4;
   grid-row: 3 / 5;
+  background-image: url("img/cinn_saffron.jpg");
 }
 
 /* Bottom right */
 .card-7 {
   grid-column: 4 / 5;
   grid-row: 3 / 5;
+  background-image: url("img/Bassett_MOE_ad.jpg");
 }
 
 .large {
@@ -195,3 +202,26 @@ nav a {
     height: 250px;
   }
 }
+
+.project-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  color: #888;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 30px 0;
+}
+
+.services p {
+  margin-bottom: 10px;
+  color: #777;
+}
+
