@@ -105,8 +105,8 @@ nav a {
 }
 
 .card-9 {
-  grid-column: 4/ span 1;
-  grid-row: 5/ span 3;
+  grid-column: span 1;
+  grid-row: span 3;
   background-image: url("../img/temp.jpg");
 }
 
