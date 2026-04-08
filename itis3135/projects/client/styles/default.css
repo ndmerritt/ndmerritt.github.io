@@ -65,34 +65,34 @@ nav a {
 /* Small left cards */
 .card-3 {
   grid-column: span 1;
-  grid-row: span 1;
+  grid-row: span 2;
   background-image: url("../img/AIP.jpg");
 }
 
 .card-4 {
   grid-column: span 1;
-  grid-row: span 1;
+  grid-row: span 2;
   background-image: url("../img/collegeAdmit.jpg");
 }
 
 /* Wide bottom left */
 .card-5 {
   grid-column: span 2;
-  grid-row: span 1;
+  grid-row: span 2;
   background-image: url("../img/Scoops.jpg");
 }
 
 /* Tall right */
 .card-6 {
   grid-column: span 1;
-  grid-row: span 2;
+  grid-row: span 3;
   background-image: url("../img/cinn_saffron.jpg");
 }
 
 /* Bottom right */
 .card-7 {
   grid-column: span 1;
-  grid-row: span 2;
+  grid-row: span 3;
   background-image: url("../img/Bassett_MOE_ad.jpg");
 }
 
