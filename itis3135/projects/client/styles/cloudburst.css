@@ -1,4 +1,4 @@
-
+/* header */
 * {
   margin: 0;
   padding: 0;
@@ -28,93 +28,85 @@ nav a {
   font-size: 14px;
   letter-spacing: 2px;
 }
+/* cloudburst layout */
 
 .page-container {
   display: flex;
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%; 
   padding: 40px 60px;
-  gap: 60px;
+  gap: 80px;
+  box-sizing: border-box;
 }
 
 .left-column {
   flex: 2; 
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 40px;
 }
 
 .left-column img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 4px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 1000px; 
 }
 
 .right-column {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
 }
 
 .content-sticky {
   position: sticky;
-  top: 40px;
+  top: 60px;
+  width: 100%;
+  max-width: 400px;
 }
 
 .right-column h2 {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 600;
   margin-bottom: 20px;
-  color: #1a1a1a;
-  line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 .right-column p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.project-link {
-  display: inline-block;
-  color: #888;
-  text-decoration: none;
-  font-size: 0.9rem;
-  margin-bottom: 40px;
-  transition: color 0.2s;
-}
-
-.project-link:hover {
-  color: #000;
-  text-decoration: underline;
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #444;
 }
 
 hr {
   border: 0;
-  border-top: 1px solid #eaeaea;
-  margin-bottom: 40px;
+  border-top: 1px solid #ddd;
+  margin: 30px 0 30px auto;
+  width: 100%; 
 }
 
 .services p {
   font-size: 0.85rem;
-  color: #777;
-  margin-bottom: 12px;
-  text-transform: none;
+  color: #888;
+  margin-bottom: 10px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
   .page-container {
     flex-direction: column;
     padding: 20px;
+    gap: 40px;
   }
-
-  .left-column, .right-column {
-    flex: none;
-    width: 100%;
+  
+  .right-column {
+    align-items: flex-start;
+    text-align: left;
   }
-
+  
   .content-sticky {
     position: static;
+    max-width: 100%;
   }
 }
