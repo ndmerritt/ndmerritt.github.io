@@ -65,11 +65,12 @@ nav a {
   text-align: left; 
 }
 
-.right-column h2 {
+.right-column h3 {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 20px;
   color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
 }
 
 .right-column p {
@@ -77,6 +78,7 @@ nav a {
   line-height: 1.8;
   color: #444;
   margin-bottom: 25px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .project-link {
