@@ -32,53 +32,57 @@ nav a {
 
 .page-container {
   display: flex;
-  width: 100%; 
-  padding: 40px 60px; 
-  gap: 100px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0;
+  gap: 0;
   box-sizing: border-box;
 }
 
 .left-column {
   flex: 2; 
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
 }
 
 .left-column img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .right-column {
   flex: 1;
   display: flex;
-  justify-content: flex-end; 
+  justify-content: center;
+  align-items: flex-start;
+  padding: 80px 60px;
+  background-color: #fff;
 }
 
 .content-sticky {
-  position: sticky;
-  top: 60px;
   width: 100%;
-  max-width: 380px;
-  text-align: left; 
+  max-width: 400px; 
+  text-align: left;
 }
 
-.right-column h3 {
-  font-size: 1.4rem;
+.right-column h2 {
+  font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 20px;
-  color: #1a1a1a;
-  font-family: 'Poppins', sans-serif;
+  margin-bottom: 24px;
+  color: #111;
+  line-height: 1.3;
 }
 
 .right-column p {
-  font-size: 0.95rem;
+  font-size: 1rem;
   line-height: 1.8;
-  color: #444;
-  margin-bottom: 25px;
-  font-family: 'Poppins', sans-serif;
+  color: #4a4a4a;
+  margin-bottom: 30px;
 }
 
 .project-link {
@@ -86,35 +90,32 @@ nav a {
   color: #888;
   text-decoration: none;
   font-size: 0.9rem;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 hr {
   border: 0;
-  border-top: 1px solid #ddd;
-  margin: 30px 0;
-  width: 100%; 
+  border-top: 1px solid #eee;
+  margin-bottom: 40px;
 }
 
 .services p {
   font-size: 0.85rem;
-  color: #888;
-  margin-bottom: 10px;
+  color: #999;
+  margin-bottom: 12px;
 }
 
 @media (max-width: 1024px) {
   .page-container {
     flex-direction: column;
-    padding: 20px;
-    gap: 40px;
+  }
+  
+  .left-column {
+    height: 60vh;
+    position: static;
   }
   
   .right-column {
-    justify-content: flex-start;
-  }
-  
-  .content-sticky {
-    position: static;
-    max-width: 100%;
+    padding: 40px 25px;
   }
 }
