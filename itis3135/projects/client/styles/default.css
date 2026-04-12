@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* header */
 * {
   margin: 0;
   padding: 0;
@@ -29,6 +30,72 @@ nav a {
   font-size: 14px;
   letter-spacing: 2px;
 }
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background: #1a1a1a;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 8px;
+  min-width: 180px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  pointer-events: none;
+
+  transition: 0.3s ease;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  margin: 0;
+  color: #ccc;
+}
+
+.dropdown-menu li a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown > a::after {
+  content: " ▼";
+  font-size: 10px;
+}
+
+/* home page layout */
 
 .grid-container {
   display: grid;
