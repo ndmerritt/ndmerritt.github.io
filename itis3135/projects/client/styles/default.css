@@ -221,13 +221,6 @@ nav a {
   cursor: pointer;
 }
 
-.card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.65);
-}
-
 .card {
   display: block;
   position: relative;
