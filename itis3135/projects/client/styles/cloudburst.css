@@ -102,10 +102,8 @@ nav a {
 .page-container {
   display: flex;
   width: 100%;
-  min-height: 100vh;
   padding: 20px 60px 0 60px;
   gap: 20px;
-  box-sizing: border-box;
   align-items: flex-start;
 }
 
@@ -114,29 +112,24 @@ nav a {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  height: auto;
 }
 
 .left-column img {
-  width: 95%;
-  height: 95%;
-  flex: 1;
+  width: 100%;
+  height: auto;
+  display: block;
   object-fit: cover;
-  border-radius: 15px;
 }
 
 .right-column {
   flex: 0 0 26%;
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
   padding: 0 60px;
-  background-color: #fff;
-  min-height: auto;
+  background: #fff;
+  height: auto;
   font-family: 'Poppins', sans-serif;
-  height: 100%;
 }
 
 .content-sticky {
