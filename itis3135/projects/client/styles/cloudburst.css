@@ -40,19 +40,19 @@ nav a {
 }
 
 .left-column {
-  flex: 2; 
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  overflow: hidden;
+  flex: 2 1 66%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  height: calc(100vh - 120px);
 }
 
 .left-column img {
   width: 100%;
-  height: 100%;
-  display: block;
+  flex: 1;
   object-fit: cover;
-  object-position: center;
+  border-radius: 15px;
 }
 
 .right-column {
@@ -63,6 +63,7 @@ nav a {
   padding: 80px 60px;
   background-color: #fff;
   min-height: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .content-sticky {
