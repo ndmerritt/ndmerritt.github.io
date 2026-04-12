@@ -41,7 +41,7 @@ nav a {
 }
 
 .left-column {
-  flex: 0 0 66%;
+  flex: 0 0 70%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -58,7 +58,7 @@ nav a {
 }
 
 .right-column {
-  flex: 0 0 34%;
+  flex: 0 0 30%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -74,7 +74,7 @@ nav a {
   text-align: left;
 }
 
-.right-column h2 {
+.right-column h3 {
   font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 24px;
