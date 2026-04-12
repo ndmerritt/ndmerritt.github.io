@@ -70,6 +70,7 @@ nav a {
   pointer-events: none;
 
   transition: 0.3s ease;
+  z-index: 1001;
 }
 
 .dropdown-menu li a {
