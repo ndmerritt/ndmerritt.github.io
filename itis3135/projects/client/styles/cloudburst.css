@@ -101,7 +101,6 @@ nav a {
 
 .page-container {
   display: flex;
-  width: 100%;
   padding: 20px 60px 0 60px;
   gap: 20px;
   align-items: flex-start;
@@ -138,7 +137,7 @@ nav a {
   text-align: left;
 }
 
-.right-column h3 {
+.project-title {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 24px;
