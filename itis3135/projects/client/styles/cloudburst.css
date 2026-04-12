@@ -130,12 +130,13 @@ nav a {
   flex: 0 0 26%;
   flex-direction: column;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   padding: 0 60px;
   background-color: #fff;
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
+  height: 100%;
 }
 
 .content-sticky {
