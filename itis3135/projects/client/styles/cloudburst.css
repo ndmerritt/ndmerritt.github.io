@@ -110,6 +110,29 @@ hr {
   margin-top: auto;
 }
 
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  margin: 0;
+  color: #ccc;
+}
+
+.dropdown-menu li a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown > a::after {
+  content: " ▼";
+  font-size: 10px;
+}
+
 @media (max-width: 1024px) {
   .page-container {
     flex-direction: column;
