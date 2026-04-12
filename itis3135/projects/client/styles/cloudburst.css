@@ -155,14 +155,14 @@ nav a {
   line-height: 1.8;
   color: #999;
   margin-bottom: 30px;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .project-link {
   display: inline-block;
   color: #888;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-bottom: 40px;
 }
 
