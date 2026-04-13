@@ -100,12 +100,19 @@ nav a {
 /* footer */
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 25px 50px;
   background: #ffffff;
   border-top: 1px solid #eee;
   font-family: 'Poppins', sans-serif;
+  color: #999;
+  height: 100vh;
+  text-align: center;
+}
+
+.footer a {
+	color: #999;
 }
 
 /* home page layout */
