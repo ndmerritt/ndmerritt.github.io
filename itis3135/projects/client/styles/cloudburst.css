@@ -98,7 +98,7 @@ nav a {
 }
 
 /* footer */
-.footer {
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,11 +107,10 @@ nav a {
   border-top: 1px solid #eee;
   font-family: 'Poppins', sans-serif;
   color: #999;
-  height: 100vh;
   text-align: center;
 }
 
-.footer a {
+footer a {
 	color: #999;
 }
 
