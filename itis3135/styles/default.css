@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+html {
+    height: 100%;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(135deg, #f7ffe5, #eaffc7);
     color: #2b2b2b;
     line-height: 1.6;
     margin: 0;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -66,6 +73,7 @@ main {
     padding: 100px 20px 20px; 
     max-width: 900px;
     margin: auto;
+	flex: 1;
 }
 
 section {
@@ -170,5 +178,8 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    margin-top: 40px;
+}
+
+.other-link {
+	color: #1a1a1a;
 }
