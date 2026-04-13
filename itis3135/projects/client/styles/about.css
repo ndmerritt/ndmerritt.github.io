@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
-/* reset */
+/* header */
 * {
   margin: 0;
   padding: 0;
@@ -9,16 +9,20 @@
   font-family: 'Poppins', sans-serif;
 }
 
-body {
-  background: #fff;
-  color: #111;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 50px;
+  background: #ffffff;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  width: 100px;
+  height: auto;
 }
 
 nav a {
@@ -27,6 +31,88 @@ nav a {
   color: #999;
   font-size: 14px;
   letter-spacing: 2px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: #999;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  background: #1a1a1a;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  border-radius: 8px;
+  min-width: 180px;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  pointer-events: none;
+
+  transition: 0.3s ease;
+  z-index: 1001;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  margin: 0;
+  color: #ccc;
+}
+
+.dropdown-menu li a:hover {
+  background: #333;
+  color: #fff;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.dropdown > a::after {
+  content: " ▼";
+  font-size: 10px;
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 50px;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  font-family: 'Poppins', sans-serif;
+  color: #999;
+  text-align: center;
+}
+
+footer a {
+	color: #999;
 }
 
 .about-container {
@@ -71,12 +157,4 @@ hr {
   color: #777;
   margin-bottom: 10px;
   letter-spacing: 1px;
-}
-
-.footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 12px;
-  color: #bbb;
-  border-top: 1px solid #eee;
 }
