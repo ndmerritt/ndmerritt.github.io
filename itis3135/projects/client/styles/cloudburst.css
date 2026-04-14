@@ -184,6 +184,10 @@ footer a {
   font-family: 'Lato', sans-serif;
 }
 
+.project-link:hover {
+  color: #666;
+}
+
 hr {
   border: 0;
   border-top: 1px solid #eee;
