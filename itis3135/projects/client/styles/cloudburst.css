@@ -78,6 +78,8 @@ nav a {
   padding: 10px 20px;
   margin: 0;
   color: #ccc;
+  font-weight: 100;
+  font-family: 'Lato', sans-serif;
 }
 
 .dropdown-menu li a:hover {
