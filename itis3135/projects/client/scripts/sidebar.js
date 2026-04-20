@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const overlay = document.getElementById("overlay");
   const portfolioLink = document.getElementById("portfolio-link");
   const closeBtn = document.getElementById("close-btn");
-
+console.log(portfolioLink);
   function toggleMenu() {
     sidebar.classList.toggle("active");
     overlay.classList.toggle("active");
