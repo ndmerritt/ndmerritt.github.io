@@ -175,6 +175,16 @@ hr {
   letter-spacing: 1px;
 }
 
+.project-link {
+  display: inline-block;
+  color: #999;
+  text-decoration: none;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  font-family: 'Lato', sans-serif;
+  text-decoration: underline;
+}
+
 @media (max-width: 1024px) {
   .about-container {
     flex-direction: column;
