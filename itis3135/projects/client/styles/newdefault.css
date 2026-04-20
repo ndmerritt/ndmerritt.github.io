@@ -355,7 +355,6 @@ hr {
   width: 300px;
   height: 100vh;
   background: #111;
-  padding: 40px 20px;
 
   display: flex;
   flex-direction: column;
@@ -364,7 +363,7 @@ hr {
   z-index: 2000;
 }
 
-.sidebar.active {
+.active {
   right: 0;
 }
 
@@ -400,11 +399,28 @@ hr {
 }
 
 .top-nav a {
+  margin-left: 40px;
   text-decoration: none;
   color: #999;
   font-size: 14px;
-  letter-spacing: 2px;
-  cursor: pointer;
+  letter-spacing: 1px;
+  font-weight: 500;
+  position: relative;
+}
+
+.top-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #999;
+  transition: width 0.3s ease;
+}
+
+.top-nav a:hover::after {
+  width: 100%;
 }
 
 .top-nav a:hover {
@@ -426,4 +442,6 @@ hr {
   opacity: 1;
   pointer-events: auto;
 }
+
+
 
