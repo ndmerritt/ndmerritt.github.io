@@ -8,6 +8,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+	background-color: #f7f3ee;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
