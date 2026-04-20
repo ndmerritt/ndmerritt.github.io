@@ -123,31 +123,31 @@ footer a {
 }
 
 .about-left {
-  flex: 1;
+  flex: 0 0 26%;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
+  max-width: none;
 }
 
 .about-right {
-  flex: 1;
+  flex: 0 0 74%;
   display: flex;
-  justify-content: flex-end;
 }
 
 .about-right img {
   width: 100%;
-  max-width: 500px;
   height: auto;
+  display: block;
   object-fit: cover;
 }
 
 .about-content-title {
-  font-family: 'Lato', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 600;
   margin-bottom: 24px;
-  letter-spacing: 2px;
+  color: #111;
+  line-height: 1.3;
+  font-family: 'Lato', sans-serif;
 }
 
 .about-left p {
