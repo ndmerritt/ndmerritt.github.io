@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (portfolioLink) {
     portfolioLink.addEventListener("click", function (e) {
       e.preventDefault();
+	  console.log("CLICKED");
       toggleMenu();
     });
   }
