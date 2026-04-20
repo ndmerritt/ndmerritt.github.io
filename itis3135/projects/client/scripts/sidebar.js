@@ -16,3 +16,5 @@ portfolioLink.addEventListener("click", function (e) {
 closeBtn.addEventListener("click", toggleMenu);
 
 overlay.addEventListener("click", toggleMenu);
+
+console.log(portfolioLink, closeBtn, overlay, sidebar);
