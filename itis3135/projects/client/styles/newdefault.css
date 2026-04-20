@@ -363,7 +363,7 @@ hr {
   z-index: 2000;
 }
 
-.active {
+body.menu-open .sidebar {
   right: 0;
 }
 
