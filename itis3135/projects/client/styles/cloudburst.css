@@ -205,6 +205,13 @@ hr {
   font-family: 'Lato', sans-serif;
 }
 
+.project-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 @media (max-width: 1024px) {
   .page-container {
     flex-direction: column;
