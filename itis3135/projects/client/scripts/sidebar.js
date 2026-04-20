@@ -4,9 +4,9 @@ function initSidebar() {
   const portfolioLink = document.getElementById("portfolio-link");
   const closeBtn = document.getElementById("close-btn");
 
-  if (!portfolioLink) return false;
-
-  console.log("Sidebar initialized");
+  if (!portfolioLink || !sidebar || !overlay || !closeBtn) {
+    return false;
+  }
 
   function toggleMenu() {
     sidebar.classList.toggle("active");
@@ -15,12 +15,11 @@ function initSidebar() {
 
   portfolioLink.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("CLICKED");
     toggleMenu();
   });
 
-  closeBtn?.addEventListener("click", toggleMenu);
-  overlay?.addEventListener("click", toggleMenu);
+  closeBtn.addEventListener("click", toggleMenu);
+  overlay.addEventListener("click", toggleMenu);
 
   return true;
 }
