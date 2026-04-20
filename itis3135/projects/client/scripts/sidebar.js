@@ -1,27 +1,32 @@
-document.addEventListener("DOMContentLoaded", function () {
+function initSidebar() {
   const sidebar = document.getElementById("sidebar");
   const overlay = document.getElementById("overlay");
   const portfolioLink = document.getElementById("portfolio-link");
   const closeBtn = document.getElementById("close-btn");
-console.log(portfolioLink);
+
+  if (!portfolioLink) return false;
+
+  console.log("Sidebar initialized");
+
   function toggleMenu() {
     sidebar.classList.toggle("active");
     overlay.classList.toggle("active");
   }
 
-  if (portfolioLink) {
-    portfolioLink.addEventListener("click", function (e) {
-      e.preventDefault();
-	  console.log("CLICKED");
-      toggleMenu();
-    });
-  }
+  portfolioLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("CLICKED");
+    toggleMenu();
+  });
 
-  if (closeBtn) {
-    closeBtn.addEventListener("click", toggleMenu);
-  }
+  closeBtn?.addEventListener("click", toggleMenu);
+  overlay?.addEventListener("click", toggleMenu);
 
-  if (overlay) {
-    overlay.addEventListener("click", toggleMenu);
+  return true;
+}
+
+const interval = setInterval(() => {
+  if (initSidebar()) {
+    clearInterval(interval);
   }
-});
+}, 50);
