@@ -132,10 +132,12 @@ footer a {
 .about-right {
   flex: 0 0 74%;
   display: flex;
+  justify-content: center;
+  padding-right: 60px;
 }
-
 .about-right img {
   width: 100%;
+  max-width: 2400px;
   height: auto;
   display: block;
   object-fit: cover;
