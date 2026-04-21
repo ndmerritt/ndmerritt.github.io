@@ -164,13 +164,13 @@ footer a {
 .card-1 {
   grid-column: span 2;
   grid-row: span 3;
-  background-image: url("../img/heads_tails.jpg");
 }
 
 /* Large right */
 .card-2 {
   grid-column: span 2;
   grid-row: span 4;
+  background-image: url("../img/heads_tails.jpg");
 }
 
 /* Video card */
