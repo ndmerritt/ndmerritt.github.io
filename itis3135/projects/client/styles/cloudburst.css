@@ -8,12 +8,16 @@
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+	background-color: #f7f3ee;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 25px 50px;
-  background: #ffffff;
+  background: #f7f3ee;
   z-index: 1000;
 }
 
@@ -105,7 +109,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 25px 50px;
-  background: #ffffff;
+  background: #f7f3ee;
   border-top: 1px solid #eee;
   font-family: 'Poppins', sans-serif;
   color: #999;
