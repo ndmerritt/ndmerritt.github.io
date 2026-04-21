@@ -171,7 +171,6 @@ footer a {
 .card-2 {
   grid-column: span 2;
   grid-row: span 4;
-  background-image: url("../img/Cloudburst.jpg");
 }
 
 /* Video card */
