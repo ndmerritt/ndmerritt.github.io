@@ -474,7 +474,7 @@ hr {
   transition: transform 0.3s ease;
 }
 
-#portfolio-link.open::after {
+#portfolio-link:hover {
   transform: rotate(90deg);
 }
 
