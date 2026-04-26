@@ -11,6 +11,7 @@ function initSidebar() {
   function toggleMenu() {
     sidebar.classList.toggle("active");
     overlay.classList.toggle("active");
+	portfolioLink.classList.toggle("open");
   }
 
   portfolioLink.addEventListener("click", (e) => {
