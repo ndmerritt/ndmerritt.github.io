@@ -50,7 +50,7 @@ ul {
 	font-size: 1.3rem;
 }
 
-em {
+p em {
   font-style: italic;
 }
 
@@ -128,10 +128,6 @@ figure img {
     display: block;
     margin: 0 auto;
     transition: transform 0.3s ease;
-}
-
-figure img:hover {
-    transform: scale(1.03);
 }
 
 figure figcaption {
