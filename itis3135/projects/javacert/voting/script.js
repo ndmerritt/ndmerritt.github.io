@@ -1,4 +1,7 @@
-const poll = new Map();
+const poll = new Map([
+  ["🟢 Green Gecko", new Set()],
+  ["🟤 Brown Gecko", new Set()]
+]);
 
 function addOption(option) {
   if (!option || option.trim() === "") {
@@ -41,33 +44,9 @@ function displayResults() {
   return result.trim();
 }
 
-
-
-
-
-const optionInput = document.getElementById("option-input");
-const addBtn = document.getElementById("add-option-btn");
 const select = document.getElementById("option-select");
-const voteBtn = document.getElementById("vote-btn");
-const voterIdInput = document.getElementById("voter-id");
-
 const message = document.getElementById("message");
 const results = document.getElementById("results");
-
-addBtn.addEventListener("click", () => {
-  const msg = addOption(optionInput.value);
-  message.textContent = msg;
-  optionInput.value = "";
-});
-
-voteBtn.addEventListener("click", () => {
-  const option = select.value;
-  const voterId = voterIdInput.value;
-
-  const msg = vote(option, voterId);
-  message.textContent = msg;
-  voterIdInput.value = "";
-});
 
 function updateDropdown() {
   select.innerHTML = `<option value="">Select option</option>`;
@@ -83,3 +62,21 @@ function updateDropdown() {
 function updateResults() {
   results.textContent = displayResults();
 }
+
+document.getElementById("vote-btn").addEventListener("click", () => {
+  const option = select.value;
+  const voterId = document.getElementById("voter-id").value;
+
+  const msg = vote(option, voterId);
+  message.textContent = msg;
+});
+
+document.getElementById("add-option-btn").addEventListener("click", () => {
+  const input = document.getElementById("option-input");
+  const msg = addOption(input.value);
+  message.textContent = msg;
+  input.value = "";
+});
+
+updateDropdown();
+updateResults();

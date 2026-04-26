@@ -1,57 +1,73 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  background: #f5f7fa;
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
   margin: 0;
   padding: 40px;
+  color: #1b3d2f;
 }
 
 h1 {
-  color: #333;
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+#gecko-mascot img {
+  width: 240px;
+  max-width: 25vw;
+  height: auto;
+  display: block;
+  margin: 10px auto 20px auto;
+  border-radius: 10px;
+  border: 2px solid #66bb6a;
+  background: #f1f8e9;
 }
 
 .container {
-  background: white;
+  background: rgba(255, 255, 255, 0.9);
   display: inline-block;
   padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
   min-width: 320px;
 }
 
 input, select {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
+  width: 90%;
   padding: 10px;
+  margin: 8px 0;
+  border: 2px solid #81c784;
+  border-radius: 6px;
+  background: #f1f8e9;
   font-size: 14px;
 }
 
 button {
+  width: 95%;
   padding: 10px;
-  width: 100%;
   margin-bottom: 10px;
-  cursor: pointer;
   border: none;
-  border-radius: 5px;
-  background: #4a90e2;
+  border-radius: 6px;
+  background: #2e7d32;
   color: white;
-  font-size: 14px;
+  cursor: pointer;
   transition: 0.2s;
 }
 
 button:hover {
-  background: #357bd8;
+  background: #43a047;
 }
 
 #message {
   font-weight: bold;
   margin-top: 10px;
+  color: #2e7d32;
 }
 
 #results {
   text-align: left;
-  background: #f0f0f0;
+  background: #f9fff9;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 6px;
+  border: 1px solid #c8e6c9;
 }
