@@ -467,21 +467,4 @@ hr {
   pointer-events: auto;
 }
 
-#portfolio-link {
-  white-space: nowrap;
-}
-
-#portfolio-link::after {
-  content: "►";
-  margin-left: 6px;
-  display: inline-block;
-  vertical-align: middle;
-  transition: transform 0.3s ease;
-}
-
-#portfolio-link:hover::after {
-  transform: rotate(90deg);
-}
-
-
 
