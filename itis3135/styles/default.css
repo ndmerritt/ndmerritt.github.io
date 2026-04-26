@@ -122,9 +122,6 @@ figure img {
     transition: transform 0.3s ease;
 }
 
-figure img:hover {
-    transform: scale(1.03);
-}
 
 figure figcaption {
     font-style: italic;
