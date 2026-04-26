@@ -9,11 +9,24 @@
 </head>
 
 <body>
-    <h1>Markdown to HTML Converter</h1>
+    <h1>The Glorious Gecko's Markdown to HTML Magic</h1>
+	
+  <div style="margin-top:10px;">
+    <img 
+      src="geckowizard.png" 
+      alt="GeckoClipart"
+      style="border-radius:10px; border:2px solid #66bb6a;"
+    />
+  </div>
+  
+  <div>
+  <p>Enter some Markdown text in the left box and watch the magic happen!</p>
+  </div>
+	
     <div id="container">
         <div class="container">
             <h2>Markdown Input:</h2>
-            <textarea id="markdown-input" placeholder="Enter your markdown here..."></textarea>
+            <textarea id="markdown-input" placeholder="Enter your markdown here for gecko conversion..."></textarea>
         </div>
         <div class="container">
             <h2>Raw HTML Output:</h2>
@@ -24,6 +37,23 @@
             <div id="preview"></div>
         </div>
     </div>
+	<div id="markdown-key">
+  <h3>Markdown Key</h3>
+
+  <ul>
+    <li><code># text</code> → Heading 1 (&lt;h1&gt;)</li>
+    <li><code>## text</code> → Heading 2 (&lt;h2&gt;)</li>
+    <li><code>### text</code> → Heading 3 (&lt;h3&gt;)</li>
+
+    <li><code>&gt; text</code> → Blockquote</li>
+
+    <li><code>![alt](url)</code> → Image</li>
+    <li><code>[text](url)</code> → Link</li>
+
+    <li><code>**text**</code> or <code>__text__</code> → Bold</li>
+    <li><code>*text*</code> or <code>_text_</code> → Italic</li>
+  </ul>
+</div>
 <script src="script.js"></script>
 </body>
 
