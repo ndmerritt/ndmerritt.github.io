@@ -13,9 +13,7 @@ function addOption(option) {
   }
 
   poll.set(option, new Set());
-  // eslint-disable-next-line no-use-before-define
   updateDropdown();
-  // eslint-disable-next-line no-use-before-define
   updateResults();
   return `Option "${option}" added to the poll.`;
 }
@@ -32,7 +30,6 @@ function vote(option, voterId) {
   }
 
   voters.add(voterId);
-  // eslint-disable-next-line no-use-before-define
   updateResults();
   return `Voter ${voterId} voted for "${option}".`;
 }
