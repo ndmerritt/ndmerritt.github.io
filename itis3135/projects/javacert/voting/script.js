@@ -1,3 +1,41 @@
+
+const select = document.getElementById("option-select");
+const message = document.getElementById("message");
+const results = document.getElementById("results");
+
+function updateDropdown() {
+  select.innerHTML = `<option value="">Select option</option>`;
+
+  for (let option of poll.keys()) {
+    const opt = document.createElement("option");
+    opt.value = option;
+    opt.textContent = option;
+    select.appendChild(opt);
+  }
+}
+
+function updateResults() {
+  results.textContent = displayResults();
+}
+
+document.getElementById("vote-btn").addEventListener("click", () => {
+  const option = select.value;
+  const voterId = document.getElementById("voter-id").value;
+
+  const msg = vote(option, voterId);
+  message.textContent = msg;
+});
+
+document.getElementById("add-option-btn").addEventListener("click", () => {
+  const input = document.getElementById("option-input");
+  const msg = addOption(input.value);
+  message.textContent = msg;
+  input.value = "";
+});
+
+updateDropdown();
+updateResults();
+
 const poll = new Map([
   ["🟢 Green Gecko", new Set()],
   ["🟤 Brown Gecko", new Set()]
@@ -43,40 +81,3 @@ function displayResults() {
 
   return result.trim();
 }
-
-const select = document.getElementById("option-select");
-const message = document.getElementById("message");
-const results = document.getElementById("results");
-
-function updateDropdown() {
-  select.innerHTML = `<option value="">Select option</option>`;
-
-  for (let option of poll.keys()) {
-    const opt = document.createElement("option");
-    opt.value = option;
-    opt.textContent = option;
-    select.appendChild(opt);
-  }
-}
-
-function updateResults() {
-  results.textContent = displayResults();
-}
-
-document.getElementById("vote-btn").addEventListener("click", () => {
-  const option = select.value;
-  const voterId = document.getElementById("voter-id").value;
-
-  const msg = vote(option, voterId);
-  message.textContent = msg;
-});
-
-document.getElementById("add-option-btn").addEventListener("click", () => {
-  const input = document.getElementById("option-input");
-  const msg = addOption(input.value);
-  message.textContent = msg;
-  input.value = "";
-});
-
-updateDropdown();
-updateResults();
