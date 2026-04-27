@@ -13,7 +13,7 @@ h1 {
 }
 
 #gecko-mascot img {
-  width: 120px;
+  width: 240px;
   max-width: 25vw;
   height: auto;
   display: block;
@@ -85,4 +85,12 @@ button:hover {
 #message {
   font-weight: bold;
   color: #2e7d32;
+}
+
+#controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
