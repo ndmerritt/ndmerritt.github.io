@@ -11,7 +11,7 @@ function playSound(key) {
   display.textContent = pad.id;
 }
 
-document.querySelectorAll(".drum-pad").forEach(pad => {
+document.querySelectorAll(".drum-pad").forEach((pad) => {
   pad.addEventListener("click", () => {
     const key = pad.textContent.trim();
     playSound(key);
