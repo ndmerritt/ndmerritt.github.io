@@ -51,7 +51,7 @@ function updateUI() {
   balanceEl.textContent = `$${account.getBalance()}`;
   listEl.innerHTML = "";
 
-  account.transactions.forEach(t => {
+  account.transactions.forEach((t) => {
     const li = document.createElement("li");
     li.textContent = `${t.type.toUpperCase()}: $${t.amount}`;
     listEl.appendChild(li);
