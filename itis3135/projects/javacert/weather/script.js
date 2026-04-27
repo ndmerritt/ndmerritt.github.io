@@ -33,7 +33,13 @@ async function showWeather(city) {
 
   const safe = (value) => (value !== undefined ? value : "N/A");
 
-  icon.src = safe(data.weather?.[0]?.icon);
+  let iconUrl = "";
+
+	if (data.weather && data.weather[0] && data.weather[0].icon) {
+	iconUrl = data.weather[0].icon;
+	}
+
+	icon.src = safe(iconUrl);
   locationEl.textContent = safe(data.name);
   weatherMain.textContent = safe(data.weather?.[0]?.main);
 
