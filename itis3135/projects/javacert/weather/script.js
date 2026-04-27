@@ -41,7 +41,13 @@ async function showWeather(city) {
 
 	icon.src = safe(iconUrl);
   locationEl.textContent = safe(data.name);
-  weatherMain.textContent = safe(data.weather?.[0]?.main);
+  let weatherMainValue = "";
+
+if (data.weather && data.weather[0] && data.weather[0].main) {
+  weatherMainValue = data.weather[0].main;
+}
+
+weatherMain.textContent = safe(weatherMainValue);
 
   mainTemp.textContent = `Temp: ${safe(data.main?.temp)} °C`;
   feelsLike.textContent = `Feels like: ${safe(data.main?.feels_like)} °C`;
