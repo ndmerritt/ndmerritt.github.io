@@ -34,9 +34,22 @@ header {
     z-index: 1000;
 }
 
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+}
+
 header nav {
     display: flex;
+    justify-content: flex-end;
     flex-wrap: wrap;
+}
+
+header nav a {
+    font-size: 0.8rem;
+    margin-left: 20px;
 }
 
 nav a {
