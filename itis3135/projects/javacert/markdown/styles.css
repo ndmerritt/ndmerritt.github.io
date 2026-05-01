@@ -61,6 +61,7 @@ header nav a {
 nav a {
     color: white;
     text-decoration: none;
+    margin-left: 20px;
     font-weight: 500;
     position: relative;
 }
