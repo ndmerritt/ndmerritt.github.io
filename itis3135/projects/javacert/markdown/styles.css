@@ -24,14 +24,14 @@ header {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    padding: 15px 25px;
+    padding: 15px 25px;  
     background: linear-gradient(to right, #a3e635, #84cc16);
     color: white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    left: 0;         
+    right: 0;         
     z-index: 1000;
 }
 
@@ -81,14 +81,14 @@ nav a:hover::after {
 }
 
 main {
-    padding: 110px 20px 40px;
+    padding: 140px 20px 40px;
     max-width: 1200px;
     width: 100%;
     margin: auto;
     flex: 1;
 }
 
-h1 {
+body h1 {
     text-align: center;
     color: #65a30d;
     margin-bottom: 25px;
