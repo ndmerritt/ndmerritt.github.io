@@ -85,6 +85,10 @@ main {
     text-align: center;
 }
 
+header h1 {
+    margin: 0;
+}
+
 body > main > h1 {
     color: #65a30d;
     font-size: 2.5rem;
