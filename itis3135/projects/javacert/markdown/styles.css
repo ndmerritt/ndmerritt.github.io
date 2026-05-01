@@ -92,7 +92,7 @@ header h1 {
     margin: 0;
 }
 
-body h1 {
+body > h1 {
     text-align: center;
     color: #65a30d;
     margin-bottom: 25px;
