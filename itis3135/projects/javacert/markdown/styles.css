@@ -86,6 +86,7 @@ main {
     max-width: 1200px;
     margin: auto;
     flex: 1;
+    align-self: stretch;
 }
 
 h1 {
@@ -123,8 +124,10 @@ h2 {
 }
 
 #markdown-input {
+	display: block;
+	padding: 12px;
+	align-self: stretch;
     min-height: 220px;
-    padding: 12px;
     background: #f7fee7;
     font-family: monospace;
     resize: vertical;
@@ -138,8 +141,10 @@ h2 {
 
 #html-output,
 #preview {
+	display: block;
+	padding: 12px;
+	align-self: stretch;
     min-height: 220px;
-    padding: 12px;
     background: #f9fff1;
     overflow-y: auto;
     white-space: pre-wrap;
