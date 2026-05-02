@@ -79,7 +79,6 @@ nav a:hover::after {
 main {
     padding: 140px 20px 40px;
     max-width: 1200px;
-    width: 100%;
     margin: auto;
     flex: 1;
     text-align: center;
@@ -132,10 +131,7 @@ h2 {
 
 input {
     width: 100%;
-    padding: 12px;
     margin: 10px 0;
-    border: 2px solid #d9f99d;
-    border-radius: 10px;
     background: #f7fee7;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
@@ -150,7 +146,6 @@ input:focus {
 
 button {
     width: 100%;
-    padding: 12px;
     margin: 8px 0;
     border: none;
     border-radius: 10px;

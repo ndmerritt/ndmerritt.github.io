@@ -78,7 +78,6 @@ nav a:hover::after {
 main {
     padding: 140px 20px 40px;
     max-width: 1200px;
-    width: 100%;
     margin: auto;
     flex: 1;
     text-align: center;
@@ -114,9 +113,6 @@ h2 {
 
 select {
     width: 250px;
-    padding: 12px;
-    border-radius: 10px;
-    border: 2px solid #d9f99d;
     background: #f7fee7;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
@@ -131,7 +127,6 @@ select:focus {
 
 button {
     width: 250px;
-    padding: 12px;
     border: none;
     border-radius: 10px;
     background: linear-gradient(to right, #a3e635, #84cc16);
