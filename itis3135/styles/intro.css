@@ -104,6 +104,10 @@ main {
 	flex: 1;
 }
 
+.exception {
+	 margin-left: 0px;
+}
+
 section {
     background: white;
     padding: 20px;
