@@ -88,6 +88,10 @@ main {
     flex: 1;
 }
 
+.exception {
+	 margin-left: 0px;
+}
+
 h1 {
     margin: 0;
 }
