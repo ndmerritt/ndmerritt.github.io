@@ -85,14 +85,14 @@ main {
     text-align: center;
 }
 
-header h1 {
+h1 {
     margin: 0;
 }
 
-body > main > h1 {
+h2 {
     color: #65a30d;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+	text-align: center;
+	font-size: 2rem;
 }
 
 #gecko-mascot img {
