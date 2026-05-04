@@ -9,8 +9,8 @@ function initSidebar() {
   }
 
   function toggleMenu() {
-    sidebar.classList.toggle("active");
-    overlay.classList.toggle("active");
+    sidebar.classList.toggle("sidebar-open");
+overlay.classList.toggle("overlay-visible");
 	portfolioLink.classList.toggle("open");
   }
 
