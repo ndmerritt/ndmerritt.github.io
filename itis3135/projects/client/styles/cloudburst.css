@@ -267,7 +267,7 @@ hr {
   z-index: 2000;
 }
 
-.sidebar.active {
+.sidebar-open {
   right: 0;
 }
 
@@ -343,7 +343,7 @@ hr {
   z-index: 1500;
 }
 
-.overlay.active {
+.overlay-visible {
   opacity: 1;
   pointer-events: auto;
 }
@@ -354,7 +354,7 @@ hr {
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.fade-in.show {
+.show {
   opacity: 1;
   transform: translateY(0);
 }
