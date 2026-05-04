@@ -363,7 +363,7 @@ hr {
   z-index: 2000;
 }
 
-.sidebar.active {
+.sidebar-open {
   right: 0;
 }
 
@@ -439,7 +439,7 @@ hr {
   z-index: 1500;
 }
 
-.overlay.active {
+.overlay-visible {
   opacity: 1;
   pointer-events: auto;
 }
