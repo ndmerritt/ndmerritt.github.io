@@ -313,8 +313,8 @@ hr {
   text-decoration: none;
   font-size: 15px;
   font-family: 'Lato', sans-serif;
-
   width: fit-content;
+  white-space: nowrap;
 }
 
 .sidebar-nav a::after {
@@ -322,8 +322,8 @@ hr {
   position: absolute;
   width: 0%;
   height: 2px;
-  bottom: -4px;
   left: 0;
+  bottom: -4px;
   background-color: #999;
   transition: width 0.3s ease;
 }
