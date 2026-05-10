@@ -308,10 +308,13 @@ hr {
 }
 
 .sidebar-nav a {
+  position: relative;
   color: #ccc;
   text-decoration: none;
   font-size: 15px;
   font-family: 'Lato', sans-serif;
+
+  width: fit-content;
 }
 
 .sidebar-nav a::after {
