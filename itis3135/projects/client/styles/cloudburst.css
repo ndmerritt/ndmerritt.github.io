@@ -314,10 +314,6 @@ hr {
   font-family: 'Lato', sans-serif;
 }
 
-.sidebar-nav a:hover {
-  color: white;
-}
-
 .sidebar-nav a::after {
   content: "";
   position: absolute;
@@ -325,6 +321,7 @@ hr {
   height: 2px;
   bottom: -4px;
   left: 0;
+  background-color: #999;
   transition: width 0.3s ease;
 }
 
