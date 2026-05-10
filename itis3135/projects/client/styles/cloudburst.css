@@ -314,7 +314,6 @@ hr {
   font-size: 15px;
   font-family: 'Lato', sans-serif;
   width: fit-content;
-  white-space: nowrap;
 }
 
 .sidebar-nav a::after {
