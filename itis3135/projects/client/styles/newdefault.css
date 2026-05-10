@@ -197,14 +197,14 @@ footer a {
 .card-6 {
   grid-column: 2/ span 1;
   grid-row: 6/ span 4;
-  background-image: url("../img/cinn_saffron.jpg");
+  background-image: url("../img/CinnSaff_thumbnail.jpg");
 }
 
 /* Bottom right */
 .card-7 {
   grid-column: 3/ span 2;
   grid-row: 5/ span 3;
-  background-image: url("../img/Bassett_MOE_ad.jpg");
+  background-image: url("../img/Bassett_thumbnail.jpg");
   background-position: top center;
 }
 
