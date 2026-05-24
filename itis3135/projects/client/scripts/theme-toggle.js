@@ -1,29 +1,25 @@
-console.log("theme-toggle.js execution:", new Date().toISOString());
-
 function initThemeToggle() {
   const toggleBtn = document.getElementById("theme-toggle");
-  const logo = document.querySelector(".logo");
+  const icon = document.getElementById("theme-icon");
 
-  if (!toggleBtn) {
-    return false;
+  if (!toggleBtn || !icon) return false;
+
+  const savedTheme = localStorage.getItem("theme");
+  const isDarkInitial = savedTheme === "dark";
+
+  if (isDarkInitial) {
+    document.documentElement.classList.add("dark-mode");
+  } else {
+    document.documentElement.classList.remove("dark-mode");
   }
 
-  console.log("theme toggle initialized");
-
-  const isDarkInitial = localStorage.getItem("theme") === "dark";
-
-  document.documentElement.classList.toggle("dark-mode", isDarkInitial);
-
-  toggleBtn.innerHTML = isDarkInitial
-  ? `<span class="icon-sun"></span>`
-  : `<span class="icon-moon"></span>`;
-
-  if (logo) {
-    logo.src = isDarkInitial
-      ? "img/logo-white.png"
-      : "img/logo-black.png";
+  function updateIcon(isDark) {
+    icon.src = isDark ? "img/sun.png" : "img/moon.png";
   }
 
+  updateIcon(isDarkInitial);
+
+  // Click handler
   toggleBtn.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark-mode");
 
@@ -31,15 +27,7 @@ function initThemeToggle() {
 
     localStorage.setItem("theme", isDark ? "dark" : "light");
 
-    toggleBtn.innerHTML = isDark
-  ? `<span class="icon-sun"></span>`
-  : `<span class="icon-moon"></span>`;
-
-    if (logo) {
-      logo.src = isDark
-        ? "img/logo-white.png"
-        : "img/logo-black.png";
-    }
+    updateIcon(isDark);
   });
 
   return true;
