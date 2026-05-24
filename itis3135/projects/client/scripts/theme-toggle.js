@@ -1,6 +1,10 @@
-const toggleBtn = document.getElementById("theme-toggle");
+function initThemeToggle() {
+  const toggleBtn = document.getElementById("theme-toggle");
 
-if (toggleBtn) {
+  if (!toggleBtn) {
+    return false;
+  }
+
   console.log("theme toggle initialized");
 
   if (localStorage.getItem("theme") === "dark") {
@@ -8,14 +12,21 @@ if (toggleBtn) {
     toggleBtn.textContent = "☀️";
   }
 
-  toggleBtn.addEventListener("click", function () {
+  toggleBtn.addEventListener("click", () => {
     console.log("TOGGLE CLICKED");
 
     document.body.classList.toggle("dark-mode");
 
     const isDark = document.body.classList.contains("dark-mode");
-
     localStorage.setItem("theme", isDark ? "dark" : "light");
     toggleBtn.textContent = isDark ? "☀️" : "🌙";
   });
+
+  return true;
 }
+
+const interval = setInterval(() => {
+  if (initThemeToggle()) {
+    clearInterval(interval);
+  }
+}, 50);
