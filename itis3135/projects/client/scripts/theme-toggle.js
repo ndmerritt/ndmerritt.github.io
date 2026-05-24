@@ -1,3 +1,5 @@
+console.log("theme-toggle.js loaded at", Date.now());
+
 function initThemeToggle() {
   const toggleBtn = document.getElementById("theme-toggle");
 
