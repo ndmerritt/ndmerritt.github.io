@@ -564,6 +564,8 @@ hr {
   width: 36px;
   height: 36px;
   display: block;
+  
+  transition: transform 0.25s ease;
 }
 
 .theme-toggle:hover {
