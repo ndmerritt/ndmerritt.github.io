@@ -1,7 +1,7 @@
 function initThemeToggle() {
   const toggleBtn = document.getElementById("theme-toggle");
   const icon = document.getElementById("theme-icon");
-  const logo = document.getElementById("site-logo");
+  const logo = document.getElementById("logo");
 
   if (!toggleBtn || !icon || !logo) return false;
 
