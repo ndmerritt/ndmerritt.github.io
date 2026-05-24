@@ -539,22 +539,22 @@ hr {
   border: 0;
 }
 
-.theme-toggle {
-  width: 36px;
-  height: 36px;
+#theme-toggle {
+  width: 40px !important;
+  height: 40px !important;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  min-width: 40px !important;
+  min-height: 40px !important;
 
-  padding: 0;
-  flex-shrink: 0;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 
-  background: none;
-  border: none;
+  padding: 0 !important;
+  margin-left: 40px !important;
 
-  cursor: pointer;
-  color: var(--secondary-text);
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .theme-toggle:hover {
@@ -564,8 +564,8 @@ hr {
 
 .icon-moon,
 .icon-sun {
-  width: 18px;
-  height: 18px;
-  display: inline-block;
+  width: 18px !important;
+  height: 18px !important;
+  display: block !important;
 }
 
