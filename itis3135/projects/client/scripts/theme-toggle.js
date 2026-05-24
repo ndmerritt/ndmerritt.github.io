@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   toggleBtn.addEventListener("click", function () {
-
+	console.log("TOGGLE CLICKED");
     document.body.classList.toggle("dark-mode");
 
     if (document.body.classList.contains("dark-mode")) {
