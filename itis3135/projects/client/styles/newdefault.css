@@ -562,10 +562,48 @@ hr {
   color: var(--text-color);
 }
 
-.icon-moon,
-.icon-sun {
-  width: 18px !important;
-  height: 18px !important;
-  display: block !important;
+.icon-moon {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+
+  border: 2px solid currentColor;
+  border-radius: 50%;
+
+  position: relative;
 }
 
+/* crescent cut-out */
+.icon-moon::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+
+  width: 10px;
+  height: 10px;
+
+  background: var(--bg-color);
+  border-radius: 50%;
+}
+
+.icon-sun {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+
+  border: 2px solid currentColor;
+  border-radius: 50%;
+
+  position: relative;
+}
+
+/* inner ring */
+.icon-sun::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
