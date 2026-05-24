@@ -17,7 +17,7 @@ function initThemeToggle() {
   toggleBtn.addEventListener("click", () => {
     console.log("TOGGLE CLICKED");
 
-    document.body.classList.toggle("dark-mode");
+    document.documentElement.classList.toggle("dark-mode");
 
     const isDark = document.body.classList.contains("dark-mode");
     localStorage.setItem("theme", isDark ? "dark" : "light");
