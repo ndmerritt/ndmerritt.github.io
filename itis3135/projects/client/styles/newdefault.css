@@ -1,5 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+:root {
+  --bg-color: #f7f3ee;
+
+  --text-color: #111;
+  --secondary-text: #999;
+  --muted-text: #777;
+
+  --header-bg: #f7f3ee;
+  --footer-bg: #f7f3ee;
+
+  --sidebar-bg: #111;
+  --sidebar-text: #ccc;
+  --sidebar-hover: #fff;
+
+  --card-bg: #ffffff;
+
+  --border-color: #eee;
+  --border-light: #ccc;
+
+  --overlay-dark: rgba(0,0,0,0.65);
+  --screen-overlay: rgba(0,0,0,0.5);
+
+  --button-bg: #ffffff;
+  --button-text: #111;
+
+  --hover-text: #000;
+}
+.dark-mode {
+  --bg-color: #111;
+
+  --text-color: #f5f5f5;
+  --secondary-text: #bbb;
+  --muted-text: #888;
+
+  --header-bg: #1a1a1a;
+  --footer-bg: #1a1a1a;
+
+  --sidebar-bg: #000;
+  --sidebar-text: #ccc;
+  --sidebar-hover: #fff;
+
+  --card-bg: #1e1e1e;
+
+  --border-color: #333;
+  --border-light: #555;
+
+  --overlay-dark: rgba(0,0,0,0.55);
+  --screen-overlay: rgba(0,0,0,0.7);
+
+  --button-bg: #f5f5f5;
+  --button-text: #111;
+
+  --hover-text: #fff;
+}
 /* header */
 * {
   margin: 0;
@@ -9,7 +63,12 @@
 }
 
 body {
-	background-color: #f7f3ee;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .header {
@@ -17,7 +76,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 25px 50px;
-  background: #f7f3ee;
+  background: var(--header-bg);
   z-index: 1000;
 }
 
@@ -31,7 +90,7 @@ body {
 nav a {
   margin-left: 40px;
   text-decoration: none;
-  color: #999;
+  color: var(--secondary-text);
   font-size: 14px;
   letter-spacing: 2px;
 }
@@ -51,7 +110,7 @@ nav a {
 .nav-list a {
   margin-left: 40px;
   text-decoration: none;
-  color: #999;
+  color: var(--secondary-text);
   font-size: 14px;
   letter-spacing: 1px;
   position: relative;
@@ -64,7 +123,7 @@ nav a {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #999;
+  background-color: var(--secondary-text);
   transition: width 0.3s ease;
 }
 
@@ -81,7 +140,7 @@ nav a {
   top: 100%;
   left: 0;
 
-  background: #1a1a1a;
+  background: var(--sidebar-bg);
   list-style: none;
   padding: 10px 0;
   margin: 0;
@@ -101,12 +160,12 @@ nav a {
   display: block;
   padding: 10px 20px;
   margin: 0;
-  color: #ccc;
+  color: var(--sidebar-text);
 }
 
 .dropdown-menu li a:hover {
-  background: #333;
-  color: #fff;
+  background: var(--border-color);
+  color: var(--sidebar-hover);
 }
 
 .dropdown:hover .dropdown-menu {
@@ -127,10 +186,10 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 25px 50px;
-  background: #f7f3ee;
-  border-top: 1px solid #eee;
+  background: var(--footer-bg);
+  border-top: 1px solid var(--border-color);
   font-family: 'Poppins', sans-serif;
-  color: #999;
+  color: var(--secondary-text);
   text-align: center;
 }
 
@@ -245,7 +304,7 @@ footer a {
   position: absolute;
   bottom: 20px;
   left: 20px;
-  color: white;
+  color: var(--sidebar-hover);
 }
 
 .overlay-heading,
@@ -256,8 +315,8 @@ footer a {
 .overlay button {
   padding: 8px 16px;
   border: none;
-  background: white;
-  color: black;
+  background: var(--button-bg);
+  color: var(--button-text);
   cursor: pointer;
 }
 
@@ -275,7 +334,7 @@ footer a {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.65);
+  background: var(--overlay-dark);
   opacity: 0;
   transition: 0.3s;
 
@@ -321,7 +380,7 @@ footer a {
 .project-link {
   display: inline-block;
   margin-bottom: 30px;
-  color: #888;
+  color: var(--secondary-text);
   text-decoration: none;
 }
 
@@ -331,13 +390,13 @@ footer a {
 
 hr {
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--border-light);
   margin: 30px 0;
 }
 
 .services p {
   margin-bottom: 10px;
-  color: #777;
+  color: var(--muted-text);
 }
 
 .menu-btn {
@@ -345,7 +404,7 @@ hr {
   background: none;
   border: none;
   cursor: pointer;
-  color: #333;
+  color: var(--text-color);
 }
 
 .sidebar {
@@ -354,7 +413,7 @@ hr {
   right: -300px;
   width: 300px;
   height: 100vh;
-  background: #111;
+  background: var(--sidebar-bg);
 
   display: flex;
   flex-direction: column;
@@ -372,7 +431,7 @@ hr {
   font-size: 20px;
   background: none;
   border: none;
-  color: white;
+  color: var(--sidebar-hover);
   cursor: pointer;
   margin-bottom: 30px;
 }
@@ -384,14 +443,14 @@ hr {
 }
 
 .sidebar-nav a {
-  color: #ccc;
+  color: var(--sidebar-text);
   text-decoration: none;
   font-size: 15px;
   font-family: 'Lato', sans-serif;
 }
 
 .sidebar-nav a:hover {
-  color: white;
+  color: var(--sidebar-hover);
 }
 
 .top-nav {
@@ -416,7 +475,7 @@ hr {
   height: 2px;
   bottom: -4px;
   left: 0;
-  background-color: #999;
+  background-color: var(--secondary-text);
   transition: width 0.3s ease;
 }
 
@@ -425,13 +484,13 @@ hr {
 }
 
 .top-nav a:hover {
-  color: black;
+  color: var(--hover-text);
 }
 
 .overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: var(--screen-overlay);
 
   opacity: 0;
   pointer-events: none;
