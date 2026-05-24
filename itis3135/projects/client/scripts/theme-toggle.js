@@ -14,7 +14,9 @@ function initThemeToggle() {
 
   document.documentElement.classList.toggle("dark-mode", isDarkInitial);
 
-  toggleBtn.textContent = isDarkInitial ? "☀️" : "🌙";
+  toggleBtn.innerHTML = isDarkInitial
+  ? `<span class="icon-sun"></span>`
+  : `<span class="icon-moon"></span>`;
 
   if (logo) {
     logo.src = isDarkInitial
@@ -29,7 +31,9 @@ function initThemeToggle() {
 
     localStorage.setItem("theme", isDark ? "dark" : "light");
 
-    toggleBtn.textContent = isDark ? "☀️" : "🌙";
+    toggleBtn.innerHTML = isDark
+  ? `<span class="icon-sun"></span>`
+  : `<span class="icon-moon"></span>`;
 
     if (logo) {
       logo.src = isDark

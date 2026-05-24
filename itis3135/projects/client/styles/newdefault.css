@@ -141,6 +141,12 @@ nav a {
   color: var(--hover-text);
 }
 
+.nav-darkmode-button {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+}
+
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -368,7 +374,7 @@ footer a {
 }
 
 .card:hover::before {
-  opacity: 0.55;
+  opacity: 0.65;
 }
 
 .card:hover .card-overlay {
