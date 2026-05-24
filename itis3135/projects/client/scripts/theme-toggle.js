@@ -1,7 +1,5 @@
-document.addEventListener("DOMContentLoaded", function () {
-
+function initThemeToggle() {
   const toggleBtn = document.getElementById("theme-toggle");
-
   if (!toggleBtn) return;
 
   if (localStorage.getItem("theme") === "dark") {
@@ -10,7 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   toggleBtn.addEventListener("click", function () {
-	console.log("TOGGLE CLICKED");
+    console.log("TOGGLE CLICKED");
+
     document.body.classList.toggle("dark-mode");
 
     if (document.body.classList.contains("dark-mode")) {
@@ -20,7 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.setItem("theme", "light");
       toggleBtn.textContent = "🌙";
     }
-
   });
+}
 
-});
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initThemeToggle);
+} else {
+  initThemeToggle();
+}
