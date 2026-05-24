@@ -37,7 +37,7 @@
   --header-bg: #1a1a1a;
   --footer-bg: #1a1a1a;
 
-  --sidebar-bg: #000;
+  --sidebar-bg: #2a2a2a;
   --sidebar-text: #ccc;
   --sidebar-hover: #fff;
 
@@ -136,7 +136,7 @@ nav a {
 }
 
 .nav-list a:hover {
-  color: black;
+  color: var(--hover-text);
 }
 
 .dropdown-menu {
@@ -198,7 +198,7 @@ footer {
 }
 
 footer a {
-	color: #999;
+	color: var(--text-color);
 }
 
 /* home page layout */
@@ -444,6 +444,8 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-left: 25px;
+  padding-right: 20px;
 }
 
 .sidebar-nav a {
@@ -465,7 +467,7 @@ hr {
 .top-nav a {
   margin-left: 40px;
   text-decoration: none;
-  color: #999;
+  color: var(--text-color);
   font-size: 14px;
   letter-spacing: 1px;
   font-weight: 500;
