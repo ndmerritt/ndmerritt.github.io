@@ -1,4 +1,4 @@
-console.log("theme-toggle.js loaded at", Date.now());
+console.log("theme-toggle.js execution:", new Date().toISOString());
 
 function initThemeToggle() {
   const toggleBtn = document.getElementById("theme-toggle");
@@ -27,8 +27,8 @@ function initThemeToggle() {
   return true;
 }
 
-const interval = setInterval(() => {
+const themeInterval = setInterval(() => {
   if (initThemeToggle()) {
-    clearInterval(interval);
+    clearInterval(themeInterval);
   }
 }, 50);
