@@ -2,7 +2,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const toggleBtn = document.getElementById("theme-toggle");
 
-  // Load saved mode
+  if (!toggleBtn) return;
+
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
     toggleBtn.textContent = "☀️";
@@ -12,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.body.classList.toggle("dark-mode");
 
-    // Save preference
     if (document.body.classList.contains("dark-mode")) {
       localStorage.setItem("theme", "dark");
       toggleBtn.textContent = "☀️";
