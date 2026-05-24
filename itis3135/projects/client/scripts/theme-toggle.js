@@ -1,6 +1,7 @@
-function initThemeToggle() {
-  const toggleBtn = document.getElementById("theme-toggle");
-  if (!toggleBtn) return;
+const toggleBtn = document.getElementById("theme-toggle");
+
+if (toggleBtn) {
+  console.log("theme toggle initialized");
 
   if (localStorage.getItem("theme") === "dark") {
     document.body.classList.add("dark-mode");
@@ -12,18 +13,9 @@ function initThemeToggle() {
 
     document.body.classList.toggle("dark-mode");
 
-    if (document.body.classList.contains("dark-mode")) {
-      localStorage.setItem("theme", "dark");
-      toggleBtn.textContent = "☀️";
-    } else {
-      localStorage.setItem("theme", "light");
-      toggleBtn.textContent = "🌙";
-    }
-  });
-}
+    const isDark = document.body.classList.contains("dark-mode");
 
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initThemeToggle);
-} else {
-  initThemeToggle();
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    toggleBtn.textContent = isDark ? "☀️" : "🌙";
+  });
 }
