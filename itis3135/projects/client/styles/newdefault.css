@@ -511,7 +511,7 @@ hr {
 .slide {
     flex-shrink: 0;
 
-    width: 700px;
+    width: 600px;
 	height: auto;
     text-decoration: none;
 
@@ -519,7 +519,7 @@ hr {
 }
 
 .slide.featured {
-    width: 700px;
+    width: 600px;
 }
 
 .slide img,
@@ -556,4 +556,8 @@ hr {
 .slide-info p {
     color: var(--secondary-text);
     font-size: 14px;
+}
+
+.hero-intro {
+	text-align: center;
 }
