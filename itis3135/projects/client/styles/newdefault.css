@@ -511,15 +511,15 @@ hr {
 .slide {
     flex-shrink: 0;
 
-    width: 600px;
-	height: auto;
+    width: 650px;
+	height: 100%;
     text-decoration: none;
 
     transition: transform 0.3s ease;
 }
 
 .slide.featured {
-    width: 600px;
+    width: 650px;
 }
 
 .slide img,
