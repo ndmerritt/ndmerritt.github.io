@@ -1,4 +1,4 @@
-const text = "Hi, my name is Deanna.";
+const text = "Hi, my name is Deanna. ";
 const target = document.getElementById("hero-text");
 
 let index = 0;
