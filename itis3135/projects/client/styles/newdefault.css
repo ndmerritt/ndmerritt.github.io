@@ -501,7 +501,7 @@ hr {
     gap: 40px;
     width: max-content;
 
-    animation: scrollProjects 80s linear infinite;
+    animation: scrollProjects 100s linear infinite;
 }
 
 .carousel-track:hover {
