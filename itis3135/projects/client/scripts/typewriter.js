@@ -8,7 +8,7 @@ function typeWriter() {
 
     target.textContent += text[index++];
     
-    const delay = Math.random() * 50 + 40;
+    const delay = Math.random() * 70 + 40;
 
     setTimeout(typeWriter, delay);
 }
