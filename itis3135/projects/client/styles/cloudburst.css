@@ -5,11 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
-	background-color: #f7f3ee;
+	background-color: #ffffff;
 }
 
 .header {
@@ -17,8 +17,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 25px 50px;
-  background: #f7f3ee;
+  background: #ffffff;
   z-index: 1000;
+  font-family: 'Lato', sans-serif;
 }
 
 .logo {
@@ -129,7 +130,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 25px 50px;
-  background: #f7f3ee;
+  background: #ffffff;
   border-top: 1px solid #eee;
   font-family: 'Poppins', sans-serif;
   color: #999;
@@ -170,7 +171,7 @@ footer a {
   flex-direction: column;
   justify-content: flex-start;
   padding: 0 40px;
-  background: #f7f3ee;
+  background: #ffffff;
   height: auto;
   font-family: 'Poppins', sans-serif;
 }
@@ -216,7 +217,7 @@ footer a {
 
 hr {
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #999;
   margin-bottom: 40px;
 }
 

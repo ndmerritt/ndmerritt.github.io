@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 :root {
-  --bg-color: #f7f3ee;
+  --bg-color: #ffffff;
 
   --text-color: #111;
   --secondary-text: #999;
   --muted-text: #777;
 
-  --header-bg: #f7f3ee;
-  --footer-bg: #f7f3ee;
+  --header-bg: #ffffff;
+  --footer-bg: #ffffff;
 
   --sidebar-bg: #111;
   --sidebar-text: #ccc;
@@ -61,7 +61,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 body {
@@ -81,6 +81,7 @@ body {
   background: var(--header-bg);
   z-index: 1000;
   transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Lato', sans-serif;
 }
 
 .logo {
@@ -530,8 +531,6 @@ hr {
     object-fit: cover;
     border-radius: 12px;
 
-    border: 1px solid var(--border-light);
-
     display: block;
 }
 
@@ -550,35 +549,36 @@ hr {
 }
 
 .slide-info {
+	font-family: 'Lato', sans-serif;
     text-align: center;
     margin-top: 15px;
     color: var(--text-color);
 }
 
 .slide-info p {
+	font-family: 'Lato', sans-serif;
     color: var(--secondary-text);
     font-size: 14px;
+	font-weight: 100;
 }
 
 .slide-info h3 {
-    font-weight: 300;
+	font-family: 'Lato', sans-serif;
+    font-weight: 500;
+	font-size: 14px;
 }
 
 .hero-intro {
+	font-family: 'Lato', sans-serif;
     text-align: center;
     min-height: 2em;
 
-    font-size: 1.7rem;
+    font-size: 1rem;
     font-weight: 300;
-    letter-spacing: 1px;
-
+	color: var(--secondary-text);
 }
 
-#hero-text::after {
-    content: "|";
-    margin-left: 2px;
-    animation: blink 0.8s infinite;
-}
+
 
 @keyframes blink {
     50% {

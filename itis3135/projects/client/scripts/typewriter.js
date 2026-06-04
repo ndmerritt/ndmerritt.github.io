@@ -1,4 +1,4 @@
-const text = "Hi, my name is Deanna. ";
+const text = "I’m Deanna, a graphic designer who helps companies reimagine their identities and craft stories worth telling. ";
 const target = document.getElementById("hero-text");
 
 let index = 0;

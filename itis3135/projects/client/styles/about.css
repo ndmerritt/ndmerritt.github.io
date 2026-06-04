@@ -10,7 +10,7 @@
 }
 
 body {
-	background-color: #f7f3ee;
+	background-color: #ebebeb;
 }
 
 .header {
@@ -18,7 +18,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 25px 50px;
-  background: #f7f3ee;
+  background: #ebebeb;
   z-index: 1000;
 }
 
@@ -108,7 +108,7 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 25px 50px;
-  background: #f7f3ee;
+  background: #ebebeb;
   border-top: 1px solid #eee;
   font-family: 'Poppins', sans-serif;
   color: #999;
